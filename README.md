@@ -3,7 +3,7 @@
 With this repo you can create the singularity image for your projects. Just pull the repo and run this command in the folder **singularity-create-image**:
 
 
-`sudo singolarity build --writable container.sif container.def`
+`sudo singularity build --writable container.sif container.def`
 
 <hr>
 
