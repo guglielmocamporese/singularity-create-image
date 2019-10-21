@@ -14,4 +14,4 @@ List of things that you are going to install in the image will be:
 - matplotlib 3.1.1
 - tensorflow-gpu 1.14
 - tensorflow_probability 0.7
-- opencv 4.1.1.26
+- opencv 4.1.0.25
