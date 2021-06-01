@@ -1,0 +1,24 @@
+Bootstrap: docker
+From: ubuntu:18.04
+
+%post
+	apt-get -y update
+	apt-get -y install build-essential # install bash
+	apt-get -y install python3.7	
+	apt-get -y install python3-pip
+	pip install numpy
+	pip install matplotlib
+	pip install Pillow
+	pip install torch
+	pip install torchvision
+	pip install torchaudio
+	pip install pytorch_lightning
+	pip install tqdm
+	pip install lmdb
+	pip install jupyter notebook
+	pip install kaggle
+	pip install pandas
+	pip install scipy
+	pip install sklearn
+	pip install wandb
+	
