@@ -7,6 +7,7 @@ With this repo you can create the singularity image for your projects. Just pull
 git clone https://github.com/guglielmocamporese/singularity-create-image.git
 cd singularity-create-image
 
+# Build a singularity image from a definition (.def) file
 sudo singularity build --writable ./container.sif ./container.def
 ```
 
