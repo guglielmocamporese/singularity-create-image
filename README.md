@@ -1,17 +1,25 @@
-# Singularity Image
+# Create a Singularity Image
 
 With this repo you can create the singularity image for your projects. Just pull the repo and run this command:
 
+```console
+# Clone the repo
+git clone https://github.com/guglielmocamporese/singularity-create-image.git
+cd singularity-create-image
 
-`sudo singularity build --writable ./container.sif ./singularity-create-image/container.def`
+sudo singularity build --writable ./container.sif ./container.def
+```
 
-<hr>
+### Useful containers
 
-List of things that you are going to install in the image will be:
-- Ubuntu 18.04
-- python3.7
-- numpy 1.17.2
-- matplotlib 3.1.1
-- tensorflow-gpu 1.14
-- tensorflow_probability 0.7
-- opencv 4.1.0.25
+```console
+# PyTorch container
+sudo singularity build --writable ./torch_container.sif ./torch_container.def
+
+# TensorFlow container
+sudo singularity build --writable ./tensorflow_container.sif ./tensorflow_container.def
+```
+
+All the containers use:
+- Ubuntu 20.04
+- python 3.7
